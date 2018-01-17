@@ -1,0 +1,111 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "name": "How I met your mother",
+      "status": "watched",
+      "genre": "comedy",
+      "comments": "Muito bom"
+    },
+    {
+      "id": 2,
+      "name": "Friends",
+      "status": "watching",
+      "genre": "comedy",
+      "current": {
+        "episode": "01",
+        "season": "09"
+      },
+      "comments": "Bom para descontrair"
+    },
+    {
+      "id": 3,
+      "name": "Breaking Bad",
+      "status": "watched",
+      "genre": "drama",
+      "comments": "Say My Name - melhor cena"
+    },
+    {
+      "id": 4,
+      "name": "Better Call Saul",
+      "status": "toWatch",
+      "genre": "drama",
+      "comments": "Galera fala bem"
+    },
+    {
+      "name": "wwq",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 5
+    },
+    {
+      "name": "wqwq",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 6
+    },
+    {
+      "name": "rer",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 7
+    },
+    {
+      "name": "trtrt",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 8
+    },
+    {
+      "name": "yyy",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 9
+    },
+    {
+      "name": "hjh",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 10
+    },
+    {
+      "name": "cxv",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 11
+    },
+    {
+      "name": "bvb",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 12
+    },
+    {
+      "name": "2313",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "",
+      "id": 13
+    },
+    {
+      "name": "Gilmore Girls",
+      "status": "Watched",
+      "genre": "comedy",
+      "coments": "Melhor série ever depois de Friends",
+      "id": 14
+    }
+  ],
+  "genres": [
+    "comedy",
+    "drama",
+    "action"
+  ]
+}
