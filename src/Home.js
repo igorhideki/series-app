@@ -24,13 +24,13 @@ class Home extends Component {
   }
   renderGenreLink (genre) {
     return (
-      <span key={ genre }>&nbsp;<Link to={ `/series/${genre}` }>{ genre }&nbsp;</Link></span>
+      <span key={genre}>&nbsp;<Link to={`/series/${genre}`} className="badge badge-primary">{ genre }&nbsp;</Link></span>
     )
   }
   render () {
     return (
       <section className="home">
-        <h2>Home</h2>
+        <h2>Bem-vindo!</h2>
         <div>
           {
             this.state.isLoading &&

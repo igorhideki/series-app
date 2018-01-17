@@ -3,15 +3,15 @@
     {
       "id": 1,
       "name": "How I met your mother",
-      "status": "watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "comments": "Muito bom"
     },
     {
       "id": 2,
       "name": "Friends",
-      "status": "watching",
-      "genre": "comedy",
+      "status": "Assistindo",
+      "genre": "Comédia",
       "current": {
         "episode": "01",
         "season": "09"
@@ -21,91 +21,87 @@
     {
       "id": 3,
       "name": "Breaking Bad",
-      "status": "watched",
-      "genre": "drama",
+      "status": "Assistido",
+      "genre": "Drama",
       "comments": "Say My Name - melhor cena"
     },
     {
       "id": 4,
       "name": "Better Call Saul",
-      "status": "toWatch",
-      "genre": "drama",
+      "status": "Assistir",
+      "genre": "Drama",
       "comments": "Galera fala bem"
     },
     {
       "name": "wwq",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 5
     },
     {
       "name": "wqwq",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 6
     },
     {
       "name": "rer",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 7
     },
     {
       "name": "trtrt",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 8
     },
     {
       "name": "yyy",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 9
     },
     {
-      "name": "hjh",
-      "status": "Watched",
-      "genre": "comedy",
-      "coments": "",
-      "id": 10
-    },
-    {
       "name": "cxv",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 11
     },
     {
       "name": "bvb",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 12
     },
     {
       "name": "2313",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "",
       "id": 13
     },
     {
       "name": "Gilmore Girls",
-      "status": "Watched",
-      "genre": "comedy",
+      "status": "Assistido",
+      "genre": "Comédia",
       "coments": "Melhor série ever depois de Friends",
       "id": 14
     }
   ],
   "genres": [
-    "comedy",
-    "drama",
-    "action"
+    "Ação",
+    "Aventura",
+    "Comédia",
+    "Drama",
+    "Ficção Científica",
+    "Romance"
   ]
 }

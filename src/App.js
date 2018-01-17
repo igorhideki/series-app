@@ -22,7 +22,7 @@ class App extends Component {
         <div>
           <Nav />
           <div className="container">
-            <h1>Minhas séries</h1>
+            <h1 className="mt-5">Minhas séries</h1>
             <Route exact path="/" component={ Home } />
             <Route path="/series/:genre" component={ Series } />
             <Route exact path="/new-series" component={ NewSeries } />

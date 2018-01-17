@@ -32,14 +32,16 @@ class Series extends Component {
   }
   renderSerieGenre (series) {
     return (
-      <li key={ series.name }>
-        <h3>Name: { series.name }</h3>
-        <p>Status: { series.status }</p>
-        <p>Status: { series.genre }</p>
-        <div>
-          <button onClick={ () => this.deleteSeries(series.id) }>Delete</button>
+      <div className="col-md-4">
+        <div className="card mb-4 bg-light">
+          <div className="card-body">
+            <h5 className="card-title">{series.name}</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Status: {series.status} / Genero: {series.genre}</h6>
+            <p className="card-text">{series.comments}</p>
+            <button onClick={ () => this.deleteSeries(series.id) } className="btn btn-danger btn-sm" >Delete</button>
+          </div>
         </div>
-      </li>
+      </div>
     )
   }
   render () {
@@ -54,9 +56,9 @@ class Series extends Component {
           !this.state.isLoading && this.state.series.length === 0 &&
           <p>No results</p>
         }
-        <ul>
+        <div className="row">
           { !this.setState.isLoading && this.state.series.map(this.renderSerieGenre) }
-        </ul>
+        </div>
       </div>
     )
   }
