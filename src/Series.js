@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import api from './Api'
 
@@ -32,13 +33,14 @@ class Series extends Component {
   }
   renderSerieGenre (series) {
     return (
-      <div className="col-md-4">
+      <div key={series.id} className="col-md-4">
         <div className="card mb-4 bg-light">
+          <img className="card-img-top" src="/assets/images/img.svg" alt="Card image cap" />
           <div className="card-body">
             <h5 className="card-title">{series.name}</h5>
             <h6 className="card-subtitle mb-2 text-muted">Status: {series.status} / Genero: {series.genre}</h6>
             <p className="card-text">{series.comments}</p>
-            <button onClick={ () => this.deleteSeries(series.id) } className="btn btn-danger btn-sm" >Delete</button>
+            <button onClick={() => this.deleteSeries(series.id)} className="btn btn-danger btn-sm" >Delete</button>
           </div>
         </div>
       </div>
@@ -46,20 +48,23 @@ class Series extends Component {
   }
   render () {
     return (
-      <div>
-        <h2>Series { this.props.match.params.genre }</h2>
+      <section className="series mt-4">
+        <h2>Séries {this.props.match.params.genre}</h2>
+        <div className="mb-4">
+          <Link to="/">Voltar</Link>
+        </div>
         {
           this.state.isLoading &&
-          <p>Loading...</p>
+          <p>Carregando...</p>
         }
         {
           !this.state.isLoading && this.state.series.length === 0 &&
-          <p>No results</p>
+          <p>Nenhuma série encontrada</p>
         }
         <div className="row">
-          { !this.setState.isLoading && this.state.series.map(this.renderSerieGenre) }
+          {!this.setState.isLoading && this.state.series.map(this.renderSerieGenre)}
         </div>
-      </div>
+      </section>
     )
   }
 }

@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 import api from './Api'
 
-const statuses = ['Watched', 'Watching', 'To watch']
+const statuses = ['Assistido', 'Assistindo', 'Assistir']
 
 class NewSeries extends Component {
   constructor (props) {
@@ -44,37 +44,33 @@ class NewSeries extends Component {
 
   render () {
     return (
-      <section>
+      <section className="new-serie mt-4">
         {
           this.state.redirect &&
           <Redirect to={this.state.redirect} />
         }
-        <h2>New Serie</h2>
-        <div>
-          <label htmlFor="name">Name: </label>
+        <h2>Nova série</h2>
+        <div className="form-group">
+          <label htmlFor="name">Nome</label>
+          <input className="form-control" ref="name" type="text" id="name" placeholder="Nome da Série"/>
         </div>
-        <input ref="name" type="text" id="name" placeholder="Name"/>
-        <br/>
-        <div>
-          <label htmlFor="status">Status: </label>
+        <div className="form-group">
+          <label htmlFor="status">Status</label>
+          <select className="form-control" ref="status" id="status">
+            {statuses.map(status => <option key={status} value={status}>{status}</option>)}
+          </select>
         </div>
-        <select ref="status" id="status" placeholder="Status">
-          { statuses.map(status => <option key={ status } value={ status }>{ status }</option>) }
-        </select>
-        <br/>
-        <div>
-          <label htmlFor="genre">Genre: </label>
+        <div className="form-group">
+          <label htmlFor="genre">Gênero</label>
+          <select className="form-control" ref="genre" id="genre">
+            {this.state.genres.map(genre => <option key={genre} value={genre}>{genre}</option>)}
+          </select>
         </div>
-        <select ref="genre" id="genre" placeholder="Genre">
-          { this.state.genres.map(genre => <option key={ genre } value={ genre }>{ genre }</option>) }
-        </select>
-        <br/>
-        <div>
-          <label htmlFor="coments">Coments: </label>
+        <div className="form-group">
+          <label htmlFor="coments">Comentários</label>
+          <textarea className="form-control" ref="coments" name="coments" id="coments" cols="30" rows="4" placeholder="Escreva um comentário..."></textarea>
         </div>
-        <textarea ref="coments" name="coments" id="coments" cols="30" rows="10"></textarea>
-        <br/>
-        <button type="button" onClick={ this.saveSeries }>Salvar</button>
+        <button className="btn btn-primary" type="button" onClick={this.saveSeries}>Salvar</button>
       </section>
     )
   }

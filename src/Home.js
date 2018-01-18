@@ -24,13 +24,16 @@ class Home extends Component {
   }
   renderGenreLink (genre) {
     return (
-      <span key={genre}>&nbsp;<Link to={`/series/${genre}`} className="badge badge-primary">{ genre }&nbsp;</Link></span>
+      <span className="mr-1" key={genre}>
+        <Link to={`/series/${genre}`} className="badge badge-primary">{genre} </Link>
+      </span>
     )
   }
   render () {
     return (
-      <section className="home">
+      <section className="home mt-4">
         <h2>Bem-vindo!</h2>
+        <p>Escolha um gênero para ver suas séries.</p>
         <div>
           {
             this.state.isLoading &&
@@ -42,7 +45,6 @@ class Home extends Component {
           {
             !this.state.isLoading &&
             <div>
-              Gêneros:
               {
                 this.state.genres.map(this.renderGenreLink)
               }

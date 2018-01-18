@@ -13,13 +13,13 @@ class Nav extends Component {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/" className="nav-link">Início</Link>
               </li>
               <li className="nav-item">
-                <Link to="/new-series" className="nav-link">New Series</Link>
+                <Link to="/new-series" className="nav-link">Nova Série</Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">About</Link>
+                <Link to="/about" className="nav-link">Sobre</Link>
               </li>
             </ul>
           </div>

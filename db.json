@@ -33,13 +33,6 @@
       "comments": "Galera fala bem"
     },
     {
-      "name": "wwq",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "coments": "",
-      "id": 5
-    },
-    {
       "name": "wqwq",
       "status": "Assistido",
       "genre": "Comédia",
@@ -101,7 +94,6 @@
     "Aventura",
     "Comédia",
     "Drama",
-    "Ficção Científica",
     "Romance"
   ]
 }
