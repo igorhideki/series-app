@@ -29,55 +29,6 @@
       "comments": "Galera fala bem"
     },
     {
-      "id": 6,
-      "name": "wqwq",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "vcvcv"
-    },
-    {
-      "name": "rer",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 7
-    },
-    {
-      "name": "trtrt",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 8
-    },
-    {
-      "id": 9,
-      "name": "yyy",
-      "status": "Assistir",
-      "genre": "Comédia",
-      "comments": ""
-    },
-    {
-      "name": "cxv",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 11
-    },
-    {
-      "name": "bvb",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 12
-    },
-    {
-      "name": "2313",
-      "status": "Assistido",
-      "genre": "Comédia",
-      "comments": "",
-      "id": 13
-    },
-    {
       "name": "Gilmore Girls",
       "status": "Assistido",
       "genre": "Comédia",
@@ -104,13 +55,6 @@
       "status": "Assistindo",
       "genre": "Aventura",
       "comments": "vdcd"
-    },
-    {
-      "name": "Gilmore Girls",
-      "status": "Assistir",
-      "genre": "Comédia",
-      "comments": "Eridiana gosta muito.",
-      "id": 18
     }
   ],
   "genres": [

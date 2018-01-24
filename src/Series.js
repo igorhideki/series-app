@@ -34,14 +34,14 @@ class Series extends Component {
   renderSerieGenre (series) {
     return (
       <div key={series.id} className="col-md-4">
-        <div className="card mb-4 bg-light">
-          <img className="card-img-top" src="/assets/images/img.svg" alt="Card image cap" />
+        <div className="card mb-4 bg-dark">
+          <img className="card-img-top" src="/assets/images/img.svg" alt={`Imagem da serie ${series.name}`} />
           <div className="card-body">
             <h5 className="card-title">{series.name}</h5>
             <h6 className="card-subtitle mb-2 text-muted">{series.genre} / {series.status}</h6>
             <p className="card-text">{series.comments}</p>
-            <Link to={`/series-edit/${series.id}`} className="btn btn-primary mr-1" >Editar</Link>
-            <button onClick={() => this.deleteSeries(series.id)} className="btn btn-danger" >Delete</button>
+            <button onClick={() => this.deleteSeries(series.id)} className="btn btn-danger mr-1" >Delete</button>
+            <Link to={`/series-edit/${series.id}`} className="btn btn-primary" >Editar</Link>
           </div>
         </div>
       </div>
