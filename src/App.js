@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 import NewSeries from './NewSeries'
+import EditSeries from './EditSeries'
 import Series from './Series'
 
 const About = () => {
@@ -24,6 +25,7 @@ class App extends Component {
           <div className="container">
             <Route exact path="/" component={Home} />
             <Route path="/series/:genre" component={Series} />
+            <Route path="/series-edit/:id" component={EditSeries} />
             <Route exact path="/new-series" component={NewSeries} />
             <Route exact path="/about" component={About} />
           </div>

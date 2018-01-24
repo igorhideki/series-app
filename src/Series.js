@@ -38,9 +38,10 @@ class Series extends Component {
           <img className="card-img-top" src="/assets/images/img.svg" alt="Card image cap" />
           <div className="card-body">
             <h5 className="card-title">{series.name}</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Status: {series.status} / Genero: {series.genre}</h6>
+            <h6 className="card-subtitle mb-2 text-muted">{series.genre} / {series.status}</h6>
             <p className="card-text">{series.comments}</p>
-            <button onClick={() => this.deleteSeries(series.id)} className="btn btn-danger btn-sm" >Delete</button>
+            <Link to={`/series-edit/${series.id}`} className="btn btn-primary mr-1" >Editar</Link>
+            <button onClick={() => this.deleteSeries(series.id)} className="btn btn-danger" >Delete</button>
           </div>
         </div>
       </div>

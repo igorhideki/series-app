@@ -5,18 +5,14 @@
       "name": "How I met your mother",
       "status": "Assistido",
       "genre": "Comédia",
-      "comments": "Muito bom"
+      "comments": "Copia de Friends"
     },
     {
       "id": 2,
       "name": "Friends",
       "status": "Assistindo",
       "genre": "Comédia",
-      "current": {
-        "episode": "01",
-        "season": "09"
-      },
-      "comments": "Bom para descontrair"
+      "comments": "Bom para descontrair!"
     },
     {
       "id": 3,
@@ -33,60 +29,88 @@
       "comments": "Galera fala bem"
     },
     {
+      "id": 6,
       "name": "wqwq",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
-      "id": 6
+      "comments": "vcvcv"
     },
     {
       "name": "rer",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
+      "comments": "",
       "id": 7
     },
     {
       "name": "trtrt",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
+      "comments": "",
       "id": 8
     },
     {
+      "id": 9,
       "name": "yyy",
-      "status": "Assistido",
+      "status": "Assistir",
       "genre": "Comédia",
-      "coments": "",
-      "id": 9
+      "comments": ""
     },
     {
       "name": "cxv",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
+      "comments": "",
       "id": 11
     },
     {
       "name": "bvb",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
+      "comments": "",
       "id": 12
     },
     {
       "name": "2313",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "",
+      "comments": "",
       "id": 13
     },
     {
       "name": "Gilmore Girls",
       "status": "Assistido",
       "genre": "Comédia",
-      "coments": "Melhor série ever depois de Friends",
+      "comments": "Melhor série ever depois de Friends",
       "id": 14
+    },
+    {
+      "name": "",
+      "status": "Assistido",
+      "genre": "Ação",
+      "comments": "",
+      "id": 15
+    },
+    {
+      "name": "Teste",
+      "status": "Assistindo",
+      "genre": "Aventura",
+      "comments": "1212212",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "name": "Teste2",
+      "status": "Assistindo",
+      "genre": "Aventura",
+      "comments": "vdcd"
+    },
+    {
+      "name": "Gilmore Girls",
+      "status": "Assistir",
+      "genre": "Comédia",
+      "comments": "Eridiana gosta muito.",
+      "id": 18
     }
   ],
   "genres": [

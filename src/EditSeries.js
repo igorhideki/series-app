@@ -5,20 +5,29 @@ import api from './Api'
 
 const statuses = ['Assistido', 'Assistindo', 'Assistir']
 
-class NewSeries extends Component {
+class EditSeries extends Component {
   constructor (props) {
     super(props)
 
     this.state = {
       isLoading: false,
       redirect: false,
-      genres: []
+      genres: [],
+      series: {}
     }
 
     this.saveSeries = this.saveSeries.bind(this)
   }
   componentDidMount () {
     this.setState({ isLoading: true })
+    api.loadSerieById(this.props.match.params.id)
+      .then(res => {
+        this.setState({ series: res.data })
+        this.refs.name.value = this.state.series.name
+        this.refs.status.value = this.state.series.status
+        this.refs.genre.value = this.state.series.genre
+        this.refs.comments.value = this.state.series.comments
+      })
     api.loadGenres()
       .then(res => {
         this.setState({
@@ -29,15 +38,16 @@ class NewSeries extends Component {
   }
 
   saveSeries () {
-    const newSerie = {
+    const series = {
+      id: this.props.match.params.id,
       name: this.refs.name.value,
       status: this.refs.status.value,
       genre: this.refs.genre.value,
       comments: this.refs.comments.value
     }
-    api.saveSeries(newSerie).then((res) => {
+    api.updateSeries(series).then((res) => {
       this.setState({
-        redirect: `series/${this.refs.genre.value}`
+        redirect: `/series/${this.refs.genre.value}`
       })
     })
   }
@@ -49,10 +59,10 @@ class NewSeries extends Component {
           this.state.redirect &&
           <Redirect to={this.state.redirect} />
         }
-        <h2>Nova série</h2>
+        <h2>Editar série</h2>
         <div className="form-group">
           <label htmlFor="name">Nome</label>
-          <input className="form-control" ref="name" type="text" id="name" placeholder="Nome da Série"/>
+          <input className="form-control" ref="name" type="text" id="name" name="name" placeholder="Nome da Série"/>
         </div>
         <div className="form-group">
           <label htmlFor="status">Status</label>
@@ -70,11 +80,11 @@ class NewSeries extends Component {
           <label htmlFor="comments">Comentários</label>
           <textarea className="form-control" ref="comments" name="comments" id="comments" cols="30" rows="4" placeholder="Escreva um comentário..."></textarea>
         </div>
-        <Link to="/" className="btn btn-light mr-1">Cancelar</Link>
+        <Link to={`/series/${this.state.series.genre}`} className="btn btn-light mr-1">Cancelar</Link>
         <button className="btn btn-primary" type="button" onClick={this.saveSeries}>Salvar</button>
       </section>
     )
   }
 }
 
-export default NewSeries
+export default EditSeries
